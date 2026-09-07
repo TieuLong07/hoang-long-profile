@@ -7,3 +7,7 @@ node_modules/
 .vscode/
 dist/
 build/
+
+# Wrangler deploy cache + local agent prompt
+.wrangler/
+cf-agent-prompt.md

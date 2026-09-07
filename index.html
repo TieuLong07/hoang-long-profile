@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nguyễn Hoàng Long - Sinh viên VKU ngành Khoa học Máy tính. Lập trình viên, đam mê công nghệ và phát triển phần mềm." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Hoàng Long" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nguyễn Hoàng Long - Profile" />
+  <meta property="og:description" content="Sinh viên VKU Khoa học Máy tính · Lập trình viên" />
+  <meta property="og:type" content="profile" />
+
+  <title>Nguyễn Hoàng Long — Profile</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-mark">H</span>
+      <span class="nav__logo-text">Hoàng Long</span>
+    </a>
+    <nav class="nav__links" aria-label="Chính">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__theme" id="themeToggle" aria-label="Đổi theme" title="Đổi theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero__avatar" aria-hidden="true">
+        <div class="hero__avatar-inner">HL</div>
+        <div class="hero__avatar-ring"></div>
+      </div>
+      <p class="hero__greeting">Xin chào, tôi là</p>
+      <h1 class="hero__name">Nguyễn Hoàng Long</h1>
+      <p class="hero__role">
+        <span class="hero__role-text" id="typed"></span>
+        <span class="hero__cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero__bio">
+        Sinh viên năm cuối <strong>Đại học CNTT & Truyền thông Việt Hàn (VKU)</strong> —
+        chuyên ngành Khoa học Máy tính. Đam mê xây dựng phần mềm, AI agent và web hiện đại.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Xem dự án</a>
+        <a href="#contact" class="btn btn--ghost">Liên hệ</a>
+      </div>
+      <div class="hero__stats" role="list">
+        <div class="stat" role="listitem"><span class="stat__num">3+</span><span class="stat__label">Năm học</span></div>
+        <div class="stat" role="listitem"><span class="stat__num">10+</span><span class="stat__label">Dự án cá nhân</span></div>
+        <div class="stat" role="listitem"><span class="stat__num">5+</span><span class="stat__label">Stack chính</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <header class="section__head">
+        <span class="section__index">01.</span>
+        <h2 class="section__title">About</h2>
+        <span class="section__line"></span>
+      </header>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            Tôi là sinh viên ngành <em>Khoa học Máy tính</em> tại VKU, hiện tập trung vào
+            <strong>phát triển web full-stack</strong>, <strong>AI / agent workflows</strong> và
+            <strong>game development</strong>. Thích tìm hiểu công nghệ mới, tự học qua dự án thực tế.
+          </p>
+          <p>
+            Ngoài giờ học, tôi xây các dự án cá nhân (game Unity, web app, tool tự động hoá),
+            đóng góp open-source nhỏ và viết blog kĩ thuật tiếng Việt.
+          </p>
+          <ul class="about__list" aria-label="Một vài sở thích">
+            <li>🧠 AI Agent & RAG pipeline</li>
+            <li>🎮 Game dev (Unity, C#)</li>
+            <li>🌐 Web hiện đại (Next.js, React)</li>
+            <li>📚 Đọc tài liệu gốc tiếng Anh</li>
+          </ul>
+        </div>
+        <aside class="about__card" aria-label="Thông tin nhanh">
+          <div class="about__row"><span>Họ tên</span><b>Nguyễn Hoàng Long</b></div>
+          <div class="about__row"><span>Trường</span><b>VKU · ĐH CNTT & Truyền thông Việt Hàn</b></div>
+          <div class="about__row"><span>Ngành</span><b>Khoa học Máy tính</b></div>
+          <div class="about__row"><span>Địa điểm</span><b>Đà Nẵng, Việt Nam</b></div>
+          <div class="about__row"><span>Học kì</span><b>2025 - 2026</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <header class="section__head">
+        <span class="section__index">02.</span>
+        <h2 class="section__title">Skills</h2>
+        <span class="section__line"></span>
+      </header>
+      <div class="skills">
+        <article class="skills__group">
+          <h3>Ngôn ngữ</h3>
+          <ul>
+            <li><span class="chip" style="--c:#3178c6">TypeScript</span></li>
+            <li><span class="chip" style="--c:#f7df1e;color:#1a1a1a">JavaScript</span></li>
+            <li><span class="chip" style="--c:#00599c">C++</span></li>
+            <li><span class="chip" style="--c:#a371f7">C#</span></li>
+            <li><span class="chip" style="--c:#3776ab">Python</span></li>
+            <li><span class="chip" style="--c:#e34c26">HTML / CSS</span></li>
+          </ul>
+        </article>
+        <article class="skills__group">
+          <h3>Framework & Tools</h3>
+          <ul>
+            <li><span class="chip">Next.js / React</span></li>
+            <li><span class="chip">Node.js · Express</span></li>
+            <li><span class="chip">Tailwind CSS</span></li>
+            <li><span class="chip">Unity 6</span></li>
+            <li><span class="chip">Git · GitHub</span></li>
+            <li><span class="chip">Docker (cơ bản)</span></li>
+          </ul>
+        </article>
+        <article class="skills__group">
+          <h3>Đang học</h3>
+          <ul>
+            <li><span class="chip chip--soft">Prisma · tRPC</span></li>
+            <li><span class="chip chip--soft">Three.js · R3F</span></li>
+            <li><span class="chip chip--soft">LLM API · RAG</span></li>
+            <li><span class="chip chip--soft">Cloudflare Pages / Workers</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <header class="section__head">
+        <span class="section__index">03.</span>
+        <h2 class="section__title">Projects</h2>
+        <span class="section__line"></span>
+      </header>
+      <div class="projects">
+        <article class="project">
+          <header class="project__head">
+            <h3>Project V0 — Indie Game Prototype</h3>
+            <span class="project__tag">Web · Game</span>
+          </header>
+          <p>
+            Prototype game trinh thám "Mẹ ơi, con yêu mẹ!" phát hành trên web tĩnh.
+            Pipeline thủ công: thiết kế → viết kịch bản → code web.
+          </p>
+          <ul class="project__stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Cloudflare Pages</li>
+          </ul>
+          <div class="project__links">
+            <a href="#" class="link">Live ↗</a>
+            <a href="#" class="link">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <header class="project__head">
+            <h3>MC Pubg Mod</h3>
+            <span class="project__tag">Game · Mod</span>
+          </header>
+          <p>
+            Mod Minecraft 1.20.1 theo phong cách Battle Royale, dùng Forge + TACZ (gun mod).
+            Tự thiết kế asset, cân chỉnh gameplay.
+          </p>
+          <ul class="project__stack">
+            <li>Java</li><li>Forge</li><li>Gradle</li><li>JSON configs</li>
+          </ul>
+          <div class="project__links">
+            <a href="#" class="link">Docs ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <header class="project__head">
+            <h3>AI Coding Assistant</h3>
+            <span class="project__tag">Tool · AI</span>
+          </header>
+          <p>
+            Trợ lý AI cá nhân chạy local + remote, hỗ trợ đọc file, chạy lệnh, quản lý
+            cron, multi-agent workflow. Tích hợp GitHub & Telegram.
+          </p>
+          <ul class="project__stack">
+            <li>Python</li><li>TypeScript</li><li>LLM API</li><li>Telegram Bot API</li>
+          </ul>
+          <div class="project__links">
+            <a href="#" class="link">Write-up ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <header class="section__head">
+        <span class="section__index">04.</span>
+        <h2 class="section__title">Contact</h2>
+        <span class="section__line"></span>
+      </header>
+      <div class="contact">
+        <p class="contact__lead">
+          Mình đang tìm cơ hội thực tập / fresher <strong>Front-end / Full-stack</strong>.
+          Cửa sổ chat luôn mở — kết nối qua các kênh dưới nhé!
+        </p>
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:long@example.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">long@example.com</span>
+          </a>
+          <a class="contact__card" href="#" rel="noopener">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/&lt;your-handle&gt;</span>
+          </a>
+          <a class="contact__card" href="#" rel="noopener">
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">linkedin.com/in/&lt;your-handle&gt;</span>
+          </a>
+          <a class="contact__card" href="#" rel="noopener">
+            <span class="contact__label">Facebook</span>
+            <span class="contact__value">fb.com/&lt;your-handle&gt;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nguyễn Hoàng Long · Built with ❤️ & vanilla JS · Hosted on Cloudflare Pages</p>
+    <p class="footer__small">PWA · Có thể cài đặt trên điện thoại và desktop</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

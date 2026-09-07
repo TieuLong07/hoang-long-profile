@@ -39,10 +39,11 @@
   const typedEl = document.getElementById('typed');
   if (typedEl) {
     const phrases = [
-      'Sinh viên Khoa học Máy tính · VKU',
-      'Front-end & Full-stack Developer',
-      'Unity Indie Game Developer',
-      'AI Agent Tinkerer',
+      'Software Engineering @ VKU · 3rd year',
+      'Backend & API Developer',
+      'AI Agent · ReAct · RAG',
+      'Full-stack · React + FastAPI',
+      'Unity 2D Game Developer',
     ];
     let pi = 0, ci = 0, deleting = false;
 

@@ -389,6 +389,28 @@ ul { list-style: none; }
   background: var(--surface-2);
   border-radius: 4px;
 }
+.project__bullets {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.project__bullets li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.project__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 4px; top: 9px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--accent) 60%, transparent);
+}
 .project__links { display: flex; gap: 16px; }
 .link {
   font-family: var(--mono);

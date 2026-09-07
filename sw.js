@@ -2,8 +2,8 @@
    Hoàng Long Profile — Service Worker
    Cache-first cho assets tĩnh, network-first cho cùng path.
    ===================================================== */
-const CACHE_NAME = 'hl-profile-v4';
-const RUNTIME_CACHE = 'hl-runtime-v4';
+const CACHE_NAME = 'hl-profile-v5';
+const RUNTIME_CACHE = 'hl-runtime-v5';
 
 const PRECACHE_URLS = [
   './',

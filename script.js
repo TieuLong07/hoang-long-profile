@@ -39,7 +39,7 @@
   const typedEl = document.getElementById('typed');
   if (typedEl) {
     const phrases = [
-      'Software Engineering @ VKU · 3rd year',
+      'Software Engineering @ VKU · 4th year',
       'Backend & API Developer',
       'AI Agent · ReAct · RAG',
       'Full-stack · React + FastAPI',
